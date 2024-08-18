@@ -10,10 +10,11 @@ A continuación, se define el diccionario de datos de la tabla, que describe cad
 
 ### Diccionario de Datos
 
-| Nombre del Campo   | Tipo de Dato   | Descripción           | Reglas de Validación             |
-|--------------------|----------------|-------------------------------------------------------------------|--------------------------------------------------------------------|
-| `fecha`           | `datetime`      | [Descripción del campo1. Ej.: Identificador único de cada registro]. | Debe ser único y no nulo.                                          |
-| `ventas`           | `String`       | [Descripción del campo2. Ej.: Nombre del cliente].                   | Máximo 100 caracteres. No puede contener caracteres especiales.    |
+| Nombre del Campo   | Tipo de Dato   | Descripción                 | Reglas de Validación             |
+|--------------------|----------------|-----------------------------|----------------------------------|
+| `fecha`            | `datetime`     | fecha de la venta.          | Debe ser único y no nulo.        |
+| `ventas`           | `Integer`      | Valor de la venta en pesos. | Sin decimales.                   |
+| `producto`         | `String`       | Nombre del producto.        | Máximo 100 caracteres. No puede contener caracteres especiales.    |
 
 ### Reglas Generales de Gobierno de Datos
 
@@ -29,7 +30,7 @@ A continuación, se define el diccionario de datos de la tabla, que describe cad
 
 ## Responsabilidades
 
-Este documento debe ser revisado periódicamente por el equipo de [Nombre del Equipo de Datos] para garantizar que la estructura de datos sigue cumpliendo con los estándares de gobierno de datos establecidos.
+Este documento debe ser revisado periódicamente por el equipo de Gobierno de datos para garantizar que la estructura de datos sigue cumpliendo con los estándares de gobierno de datos establecidos.
 
 ## Contacto
 
